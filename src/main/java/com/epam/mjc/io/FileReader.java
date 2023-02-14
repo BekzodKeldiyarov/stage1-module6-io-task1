@@ -7,12 +7,6 @@ import java.util.Map;
 
 
 public class FileReader {
-    public static void main(String[] args) {
-        FileReader reader = new FileReader();
-        Profile dataFromFile = reader.getDataFromFile(new File("/Users/mac/Desktop/code/stage1-module6-io-task1/src/main/resources/Profile.txt"));
-        System.out.println(dataFromFile);
-    }
-
     public Profile getDataFromFile(File file) {
         Profile profile = null;
         try (InputStream inputStream =
